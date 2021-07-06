@@ -1,0 +1,41 @@
+.slick-track{
+	display: flex;
+}
+
+.slick-dots button{
+    background: none;
+    border: 0px;
+}
+
+li.slick-active{
+    background: black;
+    color:#fff;
+    width: 40px;
+    height: 40px;
+    border: 0px;
+    border-radius: 50%; 
+}
+
+    li.slick-active button{
+        background: none;;
+        border: 0px;
+    }
+    
+
+ul.slick-dots{
+    display: flex;
+    position: relative;
+    top:-50px;
+    left:750px;
+}
+
+ul.slick-dots li{
+    margin:0px 10px;
+    list-style: none;
+}
+/* 
+.slick-dots li.slick-active{
+    background: green;
+    
+
+} */
