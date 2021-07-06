@@ -6,46 +6,39 @@
 	display: flex;
 }
 
+.slick-dots{
+    display: flex;
+    align-items: center;
+}
+
 .slick-dots button{
     background: none;
     font-size: 16px;
     border: 0px;
-    vertical-align: middle;
-}
-
-li.slick-active{
-    background: #62A744;
-    color:#fff;
     width: 32px;
     height: 32px;
     border-radius: 50%; 
     margin:0px;
-
-    margin-right:20px;
-    margin-left: -5px;
+    
+    vertical-align: middle;
 }
 
 li.slick-active button{
-    background: none;
-    border: 0px;
+    background: #62A744;
     color:#fff;
 }
     
-
 ul.slick-dots{
     display: flex;
     position: relative;
-    top:-50px;
+    top:-90px;
     left:750px;
 }
 
 ul.slick-dots li{
     margin:0px;
     list-style: none;
-    margin-right:20px;
+    margin-right:10px;
 }
 
-li.slick-active{
-    margin:0px;
-}
 
