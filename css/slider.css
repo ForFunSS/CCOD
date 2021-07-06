@@ -42,3 +42,7 @@ ul.slick-dots li{
 }
 
 
+/* for live server */
+script:last-child{
+    display: none;
+}
