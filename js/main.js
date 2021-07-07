@@ -6,3 +6,4 @@ $('.front-big-slider').slick({
     accessibility: false,
 });
 
+//.front-big-slider_js 

@@ -1,0 +1,143 @@
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1440px){
+    
+}
+    /* .container{
+        max-width:1024px;
+    }
+
+    .search-phone{
+        padding-top: 10px;
+    }
+
+    div.elem-mini-slider p{
+        font-size: 12px;
+        line-height: 14px;
+        padding-right: 10px;
+    }
+
+    .elem-mini-slider::after{
+        left: -135px;
+        top: -35px;
+    }
+
+    .big-slider-img img{
+        width:100%; 
+    }
+
+    div.text-slider{
+        padding: 10px 10px 10px 10px;
+        max-height: 509px;
+    }
+
+    div.text-slider p.desc{
+        font-size: 46px;
+        line-height: 46px;
+    }
+
+    div.slick-track{
+        height: 530px;
+    }
+
+    div.text-slider p.desc>img{
+        width:52px;
+        height:52px;
+    }
+
+    p.date-news{
+        font-size: 14px;
+        min-width: 62px;
+
+    }
+
+    p.title-news{
+        font-size: 22px;
+    }
+
+    p.title-news a{
+        font-size: 18px;
+    }
+
+    .big-news img{
+        width:100%;
+    }
+
+    .news-sources p.date-news{
+        padding-right: 35px;
+    }
+
+    .news-sources p.title-news{
+        width:100%;
+    }
+
+    div.question{
+        margin-top: 0px;
+    }
+
+    div.quest .desc{
+        font-size: 3rem;
+    }
+
+    div.answer{
+        padding-top: 30px;
+    }
+
+    .flex-elem-faq{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    p.give-answer{
+      font-size: 18px;  
+    }
+
+    .answer{
+        padding-top: 330px;
+        font-size: 18px;
+    }
+
+    .answer::before{
+        width:5px;
+    }
+
+    .help-know-slider{
+        flex-direction: row;
+        
+        justify-content: center;
+    } 
+    
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .container{
+        max-width: 768px;
+    }
+
+    div.logo{
+        margin:0px;
+    }
+    
+    .sub-menu{
+        display: block;
+    }
+
+    .button-sub-menu{
+        display: block;
+    }
+
+    .main-menu{
+        visibility: hidden;
+    }
+
+    .menu{
+        margin:0px;
+        max-width: 500px;
+        justify-content: end;
+    }
+
+}
+
+@media screen and (min-device-width: 425px) and (max-device-width: 768px){
+
+} */
