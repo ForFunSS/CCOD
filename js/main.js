@@ -1,5 +1,5 @@
 
-$('.front-big-slider').slick({
+$('.front-big-slider_js').slick({
     dots:true,
     arrows:false,
     infinite:false,

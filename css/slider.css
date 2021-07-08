@@ -9,11 +9,12 @@
 .slick-dots{
     display: flex;
     align-items: center;
-    bottom: 75px;
-    position: relative;
+    
+    position: absolute;
     right: 0px;
     max-width: 150px;
-    left: 135px;
+    bottom: 50px;
+    left:51.7%;
 }
 
 .slick-dots button{
@@ -23,11 +24,8 @@
     width: 32px;
     height: 32px;
     border-radius: 50%; 
-    margin:0px;
-    
     vertical-align: middle;
-
-    
+    margin-left: 1px;
 }
 
 li.slick-active button{
@@ -48,6 +46,9 @@ ul.slick-dots li{
     margin-right:10px;
 }
 
+.slick-list{
+    max-height: 704px;
+}
 
 /* for live server */
 script:last-child{
