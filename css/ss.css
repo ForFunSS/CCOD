@@ -15,6 +15,10 @@ a {
     text-decoration: none;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 .container {
     max-width: 1440px;
     padding: 0px;
@@ -29,9 +33,31 @@ a {
 
 /*  */
 
-.site-header .container {
+.burger{
+    background: none;
+    border: 0px;
+    display: none;
+}
+
+.burger>img{
+    max-height: 32px;
+    max-width:32px;
+}
+
+.site-header{
+    position: fixed;
+    width:100%;
+    background-color: #fff;
+    z-index: 100;
+    margin:0px auto;
+    left:0;
+    right: 0;
     height: 71px;
-    display: flex;
+}
+
+.header_navig{
+    width:100%;
+    display:flex;
 }
 
 .und_line {
@@ -40,10 +66,22 @@ a {
 
 .logo {
     width: 176px;
-    height: 100%;
+    height: 71px;
     background-color: #62A744;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex: none;
+    margin-right: 32px;
+}
+
+.logo>img{
+    width:131px;
+    height: 44px;
+}
+
+.main{
+    padding-top: 72px;
 }
 
 .menu {
@@ -53,12 +91,61 @@ a {
 }
 
 .main-menu {
-    display: flex;
+    display:flex;
 }
 
 .main-menu div {
-    margin-left: 20px;
+    margin-right: 20px;
 }
+
+
+/* Burger menu  */
+
+.close-menu{
+    border:0px;
+    background: none;
+}
+
+.menu-burger{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hide-menu{
+    position: absolute;
+    top:-1000px;
+}
+
+.invis{
+    display: none;
+}
+
+.close{
+    background: none;
+    border: 0px;
+}
+
+.hide-burger{
+    display: block;
+    position: fixed;
+    top:72px;
+    left:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    transition: position 1s linear;
+}
+
+.hide-burger>div{
+    margin-bottom: 10px;
+}
+
+
+/* end burger menu */
 
 .probki,
 .search-phone {
@@ -68,15 +155,11 @@ a {
 
 .probki {
     color: #818181;
-    margin-left: auto;
-}
-
-.probki:first-child {
-    margin-left: 0px;
+    margin:0px 32px 0px auto;
 }
 
 .probki div {
-    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .probki-back .text-probki {
@@ -107,29 +190,19 @@ a {
     height: 24px;
 }
 
-.search-phone {
-    margin-left: 33px;
-}
-
 .search-phone div {
-    margin: 0px 31px 0px 0px;
-}
-
-.search-phone div:last-child {
-    margin: 0px 0px 0px 0px;
+    margin: 0px 32px 0px 0px;
 }
 
 .cont-block {
     display: flex;
-    flex-direction: row;
+
 }
 
 .mini-news-content {
     width: 33.333%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 32px 32px 32px 32px;
+    padding: 32px;
     box-sizing: border-box;
 }
 
@@ -148,18 +221,6 @@ a {
     flex: none;
 }
 
-.img-1 {
-    background: url("../images/mini-news-1.png");
-}
-
-.img-2 {
-    background: url("../images/mini-news-2.png");
-}
-
-.img-3 {
-    background: url("../images/mini-news-3.png");
-}
-
 .warning::before {
     content: "";
     display: block;
@@ -172,7 +233,6 @@ a {
 }
 
 .mini-news-content .mini-news-text {
-    max-width: 267px;
     margin-bottom: auto;
 }
 
@@ -190,7 +250,11 @@ a {
 
 /*  */
 
-.big-slider {
+.front-big-slider_js{
+    margin-bottom: 32px;
+}
+
+.big-slider{
     display: flex;
     background-color: #EEEEEE;
 }
@@ -227,12 +291,8 @@ a {
 }
 
 .minicar-image {
-    display: inline-block;
-    height: 55px;
-    width: 98px;
-    background: url("../images/car.png") no-repeat;
-    background-size: cover;
-    margin-bottom: -12px;
+    display: inline-flex;
+    align-items: baseline;
 }
 
 .miniface-image {
@@ -269,8 +329,6 @@ a {
 
 .more_det {
     font-weight: bold;
-    display: flex;
-    flex-direction: row;
 }
 
 .more_det::after {
@@ -304,7 +362,7 @@ section.news {
 }
 
 .head {
-    padding: 37px 34px 19px 32px;
+    padding: 0px 34px 19px 32px;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -314,13 +372,19 @@ section.news {
     padding-bottom: 22px;
 }
 
-.h2-st {
+.head-fs38{
     font-size: 38px;
     line-height: 40px;
 }
 
-.all-more {
-    margin-bottom: 37px;
+.title-news{
+    max-width: 490px;
+    margin-left: auto;
+}
+
+.h2-st {
+    font-size: 38px;
+    line-height: 40px;
 }
 
 .main-news {
@@ -334,9 +398,6 @@ section.news {
 }
 
 .img-news {
-    background: url("../images/car-img-news.png") no-repeat;
-    height: 276px;
-    width: 100%;
     margin-bottom: 23px;
 }
 
@@ -373,6 +434,10 @@ section.news {
     max-width: 468px;
 }
 
+.news-sources-block{
+    flex:1;
+}
+
 .news-sources-elem {
     width: 100%;
     border-bottom: 1px solid #e2e2e2;
@@ -386,8 +451,8 @@ section.news {
 
 .news-sources-elem .date-news {
     flex: none;
-    margin-right: 100px;
 }
+
 
 .news-sources-elem:last-child {
     border: 0px;
@@ -409,6 +474,7 @@ section.news {
     height: 100%;
     padding: 60px 34px 60.377px 32px;
     background: url('../images/woman-watching.png')no-repeat;
+    background-size: cover;
 }
 
 .head-faq,
@@ -466,6 +532,7 @@ div.quest {
 .fast-access {
     background-color: #242424;
     padding: 41px 34px 62px 32px;
+    margin-bottom: 51px;
 }
 
 .head-facs,
@@ -495,16 +562,8 @@ div.quest {
 
 
 /*  */
-
-
 /* helpful know */
-
-
 /*  */
-
-.head_hlp_knw {
-    padding-top: 51px;
-}
 
 .img-news-2 {
     background: url("../images/quest-image.png") no-repeat;
@@ -517,23 +576,25 @@ div.quest {
 .help-know-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+.help-know-content .big-news{
+    padding-top: 32px;
 }
 
 .content-list {
     display: flex;
     flex-wrap: wrap;
-    max-width: 704px;
-    width: 100%;
-    margin-top: 32px;
+    padding: 32px 32px 32px 0px;
     margin-left: auto;
+    max-width: 730px;
 }
 
 .content_mini_img {
     margin-bottom: 28px;
 }
 
-.content-list-elem {
+.content-list-elem:nth-child(odd){
     margin-right: 32px;
 }
 
@@ -570,7 +631,6 @@ footer {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    flex-direction: column;
     align-content: flex-start;
 }
 
@@ -578,6 +638,8 @@ footer {
     max-width: 610px;
     margin-bottom: 26px;
 }
+
+
 
 .subscribe-rules-book {
     display: flex;
@@ -594,7 +656,6 @@ footer {
 
 .rules {
     display: flex;
-    flex-direction: row;
 }
 
 .rules-elem {
@@ -624,7 +685,5 @@ footer {
 }
 
 .main-footer-element {
-    display: flex;
-    flex-direction: row;
     margin-bottom: 120px;
 }
