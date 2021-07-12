@@ -15,11 +15,11 @@
 
 <body>
     <header class="site-header container">
-        <div class="header_navig und_line ">
+        <div class="header_navig">
             <div class="logo">
                 <img src="images/logo.png" alt="">
             </div>
-            <div class="menu">
+            <div class="menu und_line">
                 <div class="main-menu">
                     <div><a href="">ЦОДД</a></div>
                     <div><a href="">Автомобилистам</a></div>
@@ -29,23 +29,27 @@
                     <div class="close-button invis"><button class="close">X</button></div>
                 </div>
                 <div class="probki">
-                    <div>Пробки</div>
+                    <div class="text-probki">Пробки</div>
                     <div class="probki-back">
-                        <div class="text-probki">3</div>
+                        <div class="text_probki_ball">3</div>
                     </div>
-                    <div>Балла</div>
+                    <div class="text-probki">Балла</div>
                 </div>
                 <div class="search-phone">
                     <div class="trubka"></div>
-                    <div class="lupa"></div>
+                    <button class="lupa"></button>
                 </div>
                 <button class="burger"><img src="/images/menu.png" alt=""></button>
             </div>
         </div>
+        <div class="search search_visible">
+            <input type="text" placeholder="Введите слово для поиска">
+            <button>Искать</button>
+        </div>
         <!--End header container-->
     </header>
-    <div class="main container">
-        <div class="cont-block">
+    <div class="main">
+        <div class="cont-block container">
             <div class="mini-news-content rig_bord">
                 <div class="img-mini-content"><img src="images/mini-news-1.png" alt=""></div>
                 <div class="mini-news-text">
@@ -65,7 +69,7 @@
                 </div>
             </div>
         </div>
-        <div class="front-big-slider_js">
+        <div class="front-big-slider_js container">
             <div>
                 <div class="front-big-slider__item">
                     <div class="big-slider">
@@ -79,7 +83,7 @@
                                 </div><br>
                                 научиться водить <br>
                                 и что нужно знать<br>
-                                об <div class="miniface-image"></div>
+                                об <div class="miniface-image"> <img src="images/face.png" alt=""> </div>
                                 автошколах?
                             </div>
                             <div class="list-accredit font-var-2">
@@ -101,9 +105,9 @@
                             <div class="desc">
 
                                 Все, что нужно
-                                <div class="mini-i-image"></div><br>
+                                <div class="mini-i-image"> <img src="images/reverse-!.png" alt=""> </div><br>
                                 знать о правильной <br>
-                                парковке <div class="miniparking-image"></div><br>
+                                парковке <div class="miniparking-image"> <img src="images/parking.png" alt=""> </div><br>
                                 в городе
                             </div>
                             <div class="list-accredit font-var-2">
@@ -124,10 +128,11 @@
                         <div class="text-slider">
                             <div class="desc">
                                 Где быстро
-                                <div class="minicar-image"></div><br>
-                                научиться водить <br>
-                                и что нужно знать<br>
-                                об <div class="miniface-image"></div>
+                                <div class="minicar-image"><img src="images/car.png" width="92px" height="54px" alt="">
+                                </div><br>
+                                научиться водить    <br>
+                                и что нужно знать   <br>
+                                об <div class="miniface-image"> <img src="images/face.png" alt=""> </div>
                                 автошколах?
                             </div>
                             <div class="list-accredit font-var-2">
@@ -142,7 +147,7 @@
         </div>
         <!--End slider block-->
 
-        <div class="news">
+        <div class="news container">
             <div class="head head-news und_line">
                 <div class="head-fs38">Новости</div>
                 <div class="more_all">
@@ -207,7 +212,7 @@
             </div>
         </div>
         <!--End news block-->
-        <div class="Faq">
+        <div class="Faq container">
             <div class="head head-faq">
                 <div class="head-fs38">Частые вопросы</div>
                 <div class="more_all">
@@ -220,10 +225,10 @@
                         <div class="quest">
                             <div class="desc">
                                 Почему у меня <br>
-                                около дома
-                                <div class="miniparking-image"></div><br>
+                                около дома <div class="miniparking-image"><img src="/images/parking.png" alt=""></div>
+                                <br>
                                 сплошная линия <br>
-                                <div class="mini-i-image"></div>
+                                <div class="mini-i-image"><img src="/images/reverse-!.png" alt=""></div>
                                 разметки?
 
                             </div>
@@ -241,7 +246,7 @@
             </div>
         </div>
         <!-- end faq block -->
-        <div class="fast-access">
+        <div class="fast-access container">
             <div class="head head-facs">
                 <div class="head-fs38">Быстрый доступ</div>
                 <div class="more_all">
@@ -249,7 +254,7 @@
                 </div>
             </div>
             <div class="fast-access-list">
-                <div class="fa-elem">
+                <div class="fa-elem-1">
                     <div class="mini-img">
                         <img src="images/reverse-!-monochrome.png" alt="">
                     </div>
@@ -316,7 +321,7 @@
             </div>
         </div>
         <!-- end fasc access block -->
-        <div class="helpful-know">
+        <div class="helpful-know container">
             <div class="head head_hlp_knw und_line">
                 <div class="head-fs38">Полезно знать</div>
                 <div class="more_all">
@@ -396,8 +401,8 @@
     </div>
     <!--End main block-->
 
-    <footer class="container">
-            <div class="main-footer-element">
+    <footer class="">
+            <div class="main-footer-element container">
                 <div class="subscribe-rules-block">
                     <div class="subscribe">
                         <div class="subscribe-title h3-st">
@@ -442,7 +447,7 @@
                 </div>
             </div>
 
-            <div class="copyright">
+            <div class="copyright container">
                 <div class="copyright-paragraph">© 2011-2021 ГКУ ЦОДД При использовании любой информации с сайта ссылка
                     на ГКУ <br>
                     ЦОДД и сайт www.gucodd.ru обязательна.</div>

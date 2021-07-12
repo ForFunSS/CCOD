@@ -1,4 +1,3 @@
-
 $('.front-big-slider_js').slick({
     dots:true,
     arrows:false,
@@ -30,4 +29,8 @@ $('.burger').click(function () {
 $('.close').click(function () { 
     $('.main-menu').removeClass('hide-burger');
     $('.close-button').toggleClass('invis');
+});
+
+$(".lupa").click(function() { 
+    $(".search").toggleClass("search_visible");
 });
