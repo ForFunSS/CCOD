@@ -15,7 +15,7 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
@@ -33,31 +33,31 @@ a:hover{
 
 /*  */
 
-.burger{
+.burger {
     background: none;
     border: 0px;
     display: none;
 }
 
-.burger>img{
+.burger>img {
     max-height: 32px;
-    max-width:32px;
+    max-width: 32px;
 }
 
-.site-header{
+.site-header {
     position: fixed;
-    width:100%;
+    width: 100%;
     background-color: #fff;
     z-index: 100;
-    margin:0px auto;
-    left:0;
+    margin: 0px auto;
+    left: 0;
     right: 0;
     height: 71px;
 }
 
-.header_navig{
-    width:100%;
-    display:flex;
+.header_navig {
+    width: 100%;
+    display: flex;
 }
 
 .und_line {
@@ -75,12 +75,12 @@ a:hover{
     margin-right: 32px;
 }
 
-.logo>img{
-    width:131px;
+.logo>img {
+    width: 131px;
     height: 44px;
 }
 
-.main{
+.main {
     padding-top: 72px;
 }
 
@@ -91,7 +91,7 @@ a:hover{
 }
 
 .main-menu {
-    display:flex;
+    display: flex;
 }
 
 .main-menu div {
@@ -101,36 +101,36 @@ a:hover{
 
 /* Burger menu  */
 
-.close-menu{
-    border:0px;
+.close-menu {
+    border: 0px;
     background: none;
 }
 
-.menu-burger{
+.menu-burger {
     display: none;
     flex-direction: column;
     align-items: center;
 }
 
-.hide-menu{
+.hide-menu {
     position: absolute;
-    top:-1000px;
+    top: -1000px;
 }
 
-.invis{
+.invis {
     display: none;
 }
 
-.close{
+.close {
     background: none;
     border: 0px;
 }
 
-.hide-burger{
+.hide-burger {
     display: block;
     position: fixed;
-    top:72px;
-    left:0px;
+    top: 72px;
+    left: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,7 +140,7 @@ a:hover{
     transition: position 1s linear;
 }
 
-.hide-burger>div{
+.hide-burger>div {
     margin-bottom: 10px;
 }
 
@@ -155,7 +155,7 @@ a:hover{
 
 .probki {
     color: #818181;
-    margin:0px 32px 0px auto;
+    margin: 0px 32px 0px auto;
 }
 
 .probki div {
@@ -196,7 +196,6 @@ a:hover{
 
 .cont-block {
     display: flex;
-
 }
 
 .mini-news-content {
@@ -250,17 +249,22 @@ a:hover{
 
 /*  */
 
-.front-big-slider_js{
+.front-big-slider_js {
     margin-bottom: 32px;
 }
 
-.big-slider{
+.big-slider {
     display: flex;
     background-color: #EEEEEE;
 }
 
-.big-slider-img {
-    width: 100%;
+.big-slider-img{
+    width:50%;
+}
+
+.big-slider-img>img {
+    height: 100%;
+    width: auto;
 }
 
 .text-slider {
@@ -372,12 +376,12 @@ section.news {
     padding-bottom: 22px;
 }
 
-.head-fs38{
+.head-fs38 {
     font-size: 38px;
     line-height: 40px;
 }
 
-.title-news{
+.title-news {
     max-width: 490px;
     margin-left: auto;
 }
@@ -434,8 +438,8 @@ section.news {
     max-width: 468px;
 }
 
-.news-sources-block{
-    flex:1;
+.news-sources-block {
+    flex: 1;
 }
 
 .news-sources-elem {
@@ -452,7 +456,6 @@ section.news {
 .news-sources-elem .date-news {
     flex: none;
 }
-
 
 .news-sources-elem:last-child {
     border: 0px;
@@ -562,7 +565,11 @@ div.quest {
 
 
 /*  */
+
+
 /* helpful know */
+
+
 /*  */
 
 .img-news-2 {
@@ -576,17 +583,17 @@ div.quest {
 .help-know-content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.help-know-content .big-news{
+.help-know-content .big-news {
     padding-top: 32px;
 }
 
 .content-list {
     display: flex;
     flex-wrap: wrap;
-    padding: 32px 32px 32px 0px;
-    margin-left: auto;
+    padding: 32px 0px;
     max-width: 730px;
 }
 
@@ -594,7 +601,7 @@ div.quest {
     margin-bottom: 28px;
 }
 
-.content-list-elem:nth-child(odd){
+.content-list-elem{
     margin-right: 32px;
 }
 
@@ -638,8 +645,6 @@ footer {
     max-width: 610px;
     margin-bottom: 26px;
 }
-
-
 
 .subscribe-rules-book {
     display: flex;
