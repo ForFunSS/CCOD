@@ -11,12 +11,15 @@ var scrollPrev = 0;
                 header_height = $('.header_navig').height();
             if (scrolled > header_height) {
                 $('.site-header').addClass('hide_menu');
+                $('.search').addClass('hide_menu');
             } else {
                 $('.site-header').removeClass('hide_menu');
+                $('.search').removeClass('hide_menu');
             }
 
             if (scrollPrev > scrolled) {
                 $('.site-header').removeClass('hide_menu');
+                $('.search').removeClass('hide_menu');
             }
             scrollPrev = scrolled;
         });

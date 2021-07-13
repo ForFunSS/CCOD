@@ -21,9 +21,12 @@ a:hover {
 
 .container {
     max-width: 1440px;
-    padding: 0px;
+    padding: 0px 34px 0px 32px;
 }
 
+.container_nolr{
+    padding:0px;
+}
 
 /*  */
 
@@ -234,10 +237,11 @@ a:hover {
     display: flex;
     padding: 32px;
     box-sizing: border-box;
+    border-right: #EEEEEE 1px solid;
 }
 
-.rig_bord {
-    border-right: #EEEEEE 1px solid;
+.mini-news-content:last-child{
+    border:0px;
 }
 
 .mini-content {
@@ -379,14 +383,19 @@ section.news {
 }
 
 .head {
-    padding: 0px 34px 19px 32px;
+    padding: 0px 0px 19px 0px;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
 }
 
 .head-news {
-    padding-bottom: 22px;
+    padding: 0px 0px 22px 34px;
+    margin: 0px -32px 0px -34px;
+}
+
+.more_all{
+    padding-right: 32px;
 }
 
 .head-fs38 {
@@ -411,7 +420,8 @@ section.news {
 
 .big-news {
     min-width: 704px;
-    padding: 24px 32px 23px 32px;
+    padding: 24px 0px 23px 0px;
+    border-right: 1px #eeeeee solid;
 }
 
 .img-news {
@@ -452,6 +462,10 @@ section.news {
     max-width: 468px;
 }
 
+.news-sources{
+    margin-right: -32px;
+}
+
 .news-sources-block {
     flex: 1;
 }
@@ -485,7 +499,8 @@ section.news {
     box-sizing: border-box;
     max-height: 704px;
     height: 100%;
-    padding: 60px 34px 60.377px 32px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: url('../images/woman-watching.png')no-repeat;
     background-size: cover;
 }
@@ -544,7 +559,8 @@ div.quest {
 
 .fast-access {
     background-color: #242424;
-    padding: 41px 34px 62px 32px;
+    padding-top:41px;
+    padding-bottom: 62px;
     margin-bottom: 51px;
 }
 
@@ -590,12 +606,27 @@ div.quest {
 
 /*  */
 
+.head.head-news, .head_hlp_knw{
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-left:-32px;
+    margin-right: -32px;
+}
+
+.more_all{
+    padding-right: 0px;
+}
+
 .img-news-2 {
     background: url("../images/quest-image.png") no-repeat;
 }
 
 .helpful-know {
     padding-bottom: 118px;
+}
+
+.help-know-content .big-news{
+    border:0px;
 }
 
 .help-know-content {
@@ -641,6 +672,9 @@ div.quest {
     border: 0px;
 }
 
+.content-list-elem:nth-child(even){
+    margin-right: 0px;
+}
 
 /* footer */
 
@@ -649,7 +683,7 @@ footer {
 }
 
 .main-footer-element {
-    padding: 66px 31px 0px 34px;
+    padding-top: 66px;
 }
 
 .subscribe {
@@ -699,7 +733,8 @@ footer {
 }
 
 .copyright {
-    padding: 34px;
+    padding-top:34px;
+    padding-bottom: 34px;
     border-top: #CBCBCB 1px solid;
 }
 
@@ -727,10 +762,8 @@ footer {
 .slick-dots{
     display: flex;
     align-items: center;
-    
     position: absolute;
     right: 0px;
-    max-width: 150px;
     bottom: 50px;
     left:51.7%;
 }
@@ -773,6 +806,10 @@ ul.slick-dots li{
         display: block;
         margin-right: 32px;
     }
+
+    .lupa{
+        margin-right: 32px;
+    }
     
     .main-menu{
         transition: display 1s linear;
@@ -810,13 +847,14 @@ ul.slick-dots li{
     .main-news{
         display: block;
     }
+   
 
     .big-news{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin:0px auto;
-    }
+    } 
 
     .news-sources-elem:first-child{
         border-top: 1px #e2e2e2 solid;
@@ -831,7 +869,7 @@ ul.slick-dots li{
         align-self: center;
     }
 
-    .big-news.rig_bord{
+    .big-news .rig_bord{
         border: 0px;
     }
 
@@ -843,19 +881,23 @@ ul.slick-dots li{
         margin-bottom: 40px;
     }
 
-    .flex-news{
+    /* .flex-news{
         display: block;
         margin:0px;
-    }
+    } */
 
-    .flex-news-elem1{
+    /* .flex-news-elem1{
         margin: 0px 0px 20px 0px;
-    }
+    } */
 
     .news-text-1{
         margin-bottom: 20px;
     }
 
+    .flex-news{
+        max-width: 600px;
+        width: 100%;
+    }
 
     .flex-elem-faq{
         flex-direction: column;
@@ -880,6 +922,14 @@ ul.slick-dots li{
 @media screen and (max-device-width: 991px) {
     .mini-news-content{
         padding: 16px;
+    }
+
+    .container{
+        padding:0px 20px 0px 20px;
+    }
+
+    .container_nolr{
+        padding:0px;
     }
 
     .big-news{
@@ -916,7 +966,7 @@ ul.slick-dots li{
         width: 1.8em;
     }
 
- .miniface-image{
+    .miniface-image{
         height: 1em;
     }
 
@@ -929,7 +979,8 @@ ul.slick-dots li{
     }
 
     .slick-dots{
-        bottom: 5%;
+        position: inline-block;
+
     }
 
     .slick-dots button{
@@ -952,6 +1003,8 @@ ul.slick-dots li{
     .mini-news-content:last-child{
         border:0px;
     }
+
+    
 }
 
 @media screen and (max-device-width: 800px){
@@ -1009,7 +1062,10 @@ ul.slick-dots li{
         margin-bottom: 20px;
     }
 
-    
+    .slick-dots{
+        bottom:0px;
+    }
+
     .Faq{
         background-position: center center;
     }
@@ -1019,7 +1075,7 @@ ul.slick-dots li{
     }
 }
 
-@media screen and (max-device-width:748px){
+@media screen and (max-device-width: 748px){
     .big-slider{
         display: block;
     }
@@ -1037,7 +1093,6 @@ ul.slick-dots li{
     }
 
     .big-slider-img{
-       height: 300px;
        width:100%;
     }
 
@@ -1045,10 +1100,20 @@ ul.slick-dots li{
         width:100%;
         height:100%;
     }
+
+    .container{
+        padding:0px 20px 0px 20px;
+    }
+
+    .container_nolr{
+        padding:0px;
+    }
+
+
 }
 
 
-@media screen and (max-device-width:624px){
+@media screen and (max-device-width: 624px){
     .title-news{
         margin-left: 0px;
     }
@@ -1061,10 +1126,14 @@ ul.slick-dots li{
     .rules-elem:first-child{
         margin-bottom: 16px;
     }
+
+    .container{
+        padding:0px 0px 0px 0px;
+    }
 }
 
 
-@media screen and (max-device-width:500px)
+@media screen and (max-device-width: 500px)
 {
     .text-probki{
         display: none;
@@ -1086,6 +1155,8 @@ ul.slick-dots li{
     .head.head-news, .head_hlp_knw{
         padding-left: 16px;
         padding-right: 16px;
+        margin-left:-16px;
+        margin-right: -16px;
     }
 
     .head-faq,.head-facs, .head_hlp_knw{
@@ -1093,22 +1164,32 @@ ul.slick-dots li{
         display: block;
         line-height: 50px;
     }
+
 }
 
-@media screen and (max-device-width:450px){
+@media screen and (max-device-width: 450px){
     .slick-dots{
         left:60%;
         bottom: 0%;
     }
 }
 
-@media screen and (max-device-width:415px){
+@media screen and (max-device-width: 415px){
     .Faq{
         max-height: 100%;
     };
+
+    .fast-access .fast-access-list{
+        padding-left:0px;
+        padding-right: 0px;
+    }
+
+    .fast-access .fast-access-list .fa-elem-1{
+        margin:4px;
+    }
 }
 
-@media screen and (max-device-width:400px){
+@media screen and (max-device-width: 400px){
     .logo{
         width:120px;
     }
