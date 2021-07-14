@@ -27,6 +27,7 @@ var scrollPrev = 0;
 $('.burger').click(function () { 
     $('.main-menu').toggleClass('hide-burger');
     $('.close-button').toggleClass('invis');
+    $('.burger').toggleClass('animate_burg');
 });
 
 $('.close').click(function () { 
@@ -36,4 +37,9 @@ $('.close').click(function () {
 
 $(".lupa").click(function() { 
     $(".search").toggleClass("search_visible");
+});
+
+$(".").click(function (e) { 
+    e.preventDefault();
+    
 });
