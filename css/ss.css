@@ -124,6 +124,14 @@ a:hover {
     padding-left: 32px;
 }
 
+.menu-line{
+    height: 2px;
+    border-radius: 30%;
+    width:30px;
+    margin:7px 0px;
+    background-color:#000;
+}
+
 .main-menu {
     display: flex;
 }
@@ -760,12 +768,11 @@ footer {
 }
 
 .slick-dots{
-    display: flex;
-    align-items: center;
+    display: inline-flex;
     position: absolute;
-    right: 0px;
     bottom: 50px;
     left:51.7%;
+    margin-bottom: 0px;
 }
 
 .slick-dots button{
@@ -1089,11 +1096,16 @@ ul.slick-dots li{
     }
 
     .slick-dots{
-        left:70%;
+        left:0px;
+        position: relative;
+        padding: 16px 0px 0px 0px;
+        width:100%;
+        justify-content: center;
     }
 
     .big-slider-img{
        width:100%;
+       height:350px;
     }
 
     .big-slider-img>img{
@@ -1146,6 +1158,10 @@ ul.slick-dots li{
     .text-slider .desc{
         margin-bottom: 16px;
     }
+
+    .big-news{
+        padding:16px 0px;
+    }
     
     .big-slider-img{
         background-size: cover;
@@ -1153,8 +1169,8 @@ ul.slick-dots li{
     }
 
     .head.head-news, .head_hlp_knw{
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
         margin-left:-16px;
         margin-right: -16px;
     }
@@ -1165,13 +1181,26 @@ ul.slick-dots li{
         line-height: 50px;
     }
 
-}
-
-@media screen and (max-device-width: 450px){
-    .slick-dots{
-        left:60%;
-        bottom: 0%;
+    .text-slider{
+        padding:16px;
     }
+
+    .front-big-slider_js{
+        margin-bottom: 16px;
+    }
+
+    .img-news{
+        margin-bottom: 16px;
+    }
+
+    .date-news{
+        margin: 0px 0px 16px 0px;
+    }
+
+    .news-text-1{
+        margin-bottom: 16px;
+    }
+
 }
 
 @media screen and (max-device-width: 415px){
@@ -1214,6 +1243,24 @@ ul.slick-dots li{
     .burger{
         margin:0px 16px 0px auto;
     }
+
+    
+}
+
+@media screen and (max-device-width: 360px){
+    .cont-block.container.container_nolr .mini-news-content{
+        display: block;
+    }
+    
+    .mini-news-content{
+        text-align: center;
+    }
+
+    .img-mini-content {
+        margin:0px auto;
+    }
+
+
 }
 
 
