@@ -28,6 +28,7 @@ $('.burger').click(function () {
     $('.main-menu').toggleClass('hide-burger');
     $('.close-button').toggleClass('invis');
     $('.burger').toggleClass('animate_burg');
+    $('body').toggleClass('no_scroll');
 });
 
 $('.close').click(function () { 

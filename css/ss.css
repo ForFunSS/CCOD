@@ -258,6 +258,7 @@ a:hover {
     width: 24px;
     height: 24px;
     border:0px;
+    margin-right: 32px;
 }
 
 .search-phone div {
@@ -300,6 +301,7 @@ a:hover {
     height: 20px;
     left: 136px;
     top: -10px;
+    margin:0px -20px -20px 0px;
 }
 
 .mini-news-content .mini-news-text {
@@ -311,13 +313,8 @@ a:hover {
     width: 450px;
 }
 
-
 /*  */
-
-
 /* slider part */
-
-
 /*  */
 
 .front-big-slider_js {
@@ -433,10 +430,6 @@ section.news {
 .head-news {
     padding: 0px 0px 22px 34px;
     margin: 0px -32px 0px -34px;
-}
-
-.more_all{
-    padding-right: 32px;
 }
 
 .head-fs38 {
@@ -648,12 +641,13 @@ div.quest {
 /*  */
 
 .head.head-news, .head_hlp_knw{
-    
+    margin:0px -32px;
+    padding:0px 32px 19px 32px;
 }
 
-.more_all{
+/* .more_all{
     
-}
+} */
 
 .img-news-2 {
     background: url("../images/quest-image.png") no-repeat;
@@ -788,6 +782,10 @@ footer {
     margin-bottom: 120px;
 }
 
+.no_scroll{
+    position:fixed;
+    overflow:hidden;
+}
 
 /*  */
 /* Slick slider */
@@ -953,6 +951,15 @@ ul.slick-dots li{
         left:52%;
     }
 
+    .news-sources{
+        margin-right: 0px;
+        margin-left: -32px;
+    }
+
+    .big-news{
+        border-right: 0px;
+    }
+
 }
 
 
@@ -1064,6 +1071,8 @@ ul.slick-dots li{
     .btn-more{
         margin-bottom: 20px;
     }
+
+    
 } 
 
 @media screen and (max-device-width: 880px){
@@ -1081,7 +1090,9 @@ ul.slick-dots li{
         border:0px;
     }
 
-    
+    .copyright-paragraph{
+        padding:2%;
+    }
 }
 
 @media screen and (max-device-width: 800px){
@@ -1094,6 +1105,14 @@ ul.slick-dots li{
     .fast-access-list{
         padding-left: 16px;
         padding-right: 16px;
+        margin-bottom: 16px;
+    }
+
+    .head .head-news{
+        margin-left: -4px;
+        margin-right: -4px;
+        padding-right: 8px;
+        padding-left: 8px;
     }
 }
 
@@ -1101,6 +1120,13 @@ ul.slick-dots li{
     
     .big-news{
         display: block;
+    }
+
+    .head_hlp_knw, .news div.head{
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-right: -8px;
+        margin-left: -8px;
     }
 
     .date-news{
@@ -1132,6 +1158,7 @@ ul.slick-dots li{
     }
 
     .subscribe{
+        padding-top: 16px;
         margin-bottom: 20px;
     }
 
@@ -1199,6 +1226,10 @@ ul.slick-dots li{
         padding:0px 8px;
     }
 
+    .news-sources{
+        margin-left: 0px;
+    }
+
     .container_nolr{
         padding:0px; 
     }
@@ -1257,6 +1288,19 @@ ul.slick-dots li{
     .text-probki{
         display: none;
     }  
+
+    .subscribe-title{
+        text-align: center;
+    }
+
+    .social{
+        flex: 1;
+    justify-content: center;
+    }
+
+    .sources-rules{
+        text-align: center;
+    }
 }
 
 
